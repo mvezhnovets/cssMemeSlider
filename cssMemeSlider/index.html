@@ -7,6 +7,34 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <div class="slider wrapper">
+    <div class="slides">
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+      <input type="radio" name="slide" id="slide4">
+
+      <img src="./slides/1.jpg" alt="Mems" class="img img1">
+      <img src="./slides/2.jpg" alt="Mems" class="img">
+      <img src="./slides/3.jpg" alt="Mems" class="img">
+      <img src="./slides/4.jpg" alt="Mems" class="img">
+    </div>
+    <div class="container">
+      <div class="info">
+        <div class="textWrapper">
+          <p class="text slide1 text1" id="text1">Slide one</p>
+          <p class="text slide2" id="text2">Slide two</p>
+          <p class="text slide3" id="text3">Slide three</p>
+          <p class="text slide4" id="text4">Slide four</p>
+        </div>
+      </div>
+      <div class="dots">
+        <label for="slide1" class="dot"></label>
+        <label for="slide2" class="dot"></label>
+        <label for="slide3" class="dot"></label>
+        <label for="slide4" class="dot"></label>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
