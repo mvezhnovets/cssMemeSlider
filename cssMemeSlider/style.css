@@ -30,12 +30,12 @@ body {
   width: 25%;
   transition: all .7s ease;
 }
-.slide {
-}
+
 .info {
   width: 50%;
   overflow: hidden;
 }
+
 .textWrapper {
   display: flex;
   width: 400%;
@@ -47,9 +47,11 @@ body {
   color: aliceblue;
   transition: all .7s ease;
 }
+
 .dots {
   display: flex;
 }
+
 .dot {
   display: block;
   width: 0.6rem;
@@ -60,6 +62,7 @@ body {
   margin: 0.2rem;
   background-color: #fff;
 }
+
 .dot:hover {
   cursor: pointer;
   background-color: #000;
@@ -87,6 +90,7 @@ input {
 #slide4:checked ~ .img1 {
   margin-left: -75%;
 }
+
 input:checked + label {
   background-color: #000;
 }
@@ -95,17 +99,30 @@ input:checked + label {
   display: flex;
   margin-top: 2rem;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
-#slide1:checked ~ .container .text1 {
+#slide1:checked~.container .text1 {
   margin-left: 0%;
 }
-#slide2:checked ~ .container .text1{
+#slide2:checked~.container .text1{
   margin-left: -25%;
 }
-#slide3:checked ~ .container .textWrapper {
+#slide3:checked~.container .text1 {
   margin-left: -50%;
 }
-#slide4:checked ~ .container .textWrapper {
+#slide4:checked~.container .text1 {
   margin-left: -75%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .dots {
+    justify-content: center;
+  }
+  .info {
+    margin-top: 2rem;
+  }
 }
